@@ -9,7 +9,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: darkslateblue;
+    color: rgb(36, 34, 26);
     background-color: rgb(252, 252, 243);
   }
   a:hover {
