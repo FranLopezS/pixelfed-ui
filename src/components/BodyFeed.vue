@@ -23,12 +23,23 @@ import { ref } from 'vue'
     </div>
 </template>
 
+<script>
+
+// function imageDetail(event) {
+//     const imgClicked = event.target
+//     imgClicked.classList.add('img-detail')
+// }
+
+</script>
+
 <style scoped>
 .bodyfeed {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+    border-top: 1px solid rgb(160, 156, 142);
+    padding-top: 10px;
 }
 
 img {
@@ -36,10 +47,18 @@ img {
     height: 300px;
     border-radius: 5px;
     cursor: pointer;
+    transition: filter 0.1s, transform 0.1s;
 }
 
 img:hover {
+    transform: scale(1.02, 1.02);;
     filter: brightness(50%)
+}
+
+.img-detail {
+    width: 400px;
+    height: 400px;
+    position: absolute;
 }
 
 @media (width < 1000px) {
